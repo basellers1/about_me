@@ -54,12 +54,12 @@ var answer4 = prompt('Do you think I have pet?').toLowerCase();
   alert('Not correct, sorry');
   console.log('user guessed yes');
 }
-var answer4 = prompt('Do you think I like coding?').toUpperCase();
+var answer5 = prompt('Do you think I like coding?').toUpperCase();
   if (useranswer === 'Y' || useranswer === 'YES') {
   alert('You are right!');
   console.log('User guessed YES');
 }
   else {
-  alert('Not correct, sorry');
-  console.log('user guessed NO');
+  alert('You are right!');
+  console.log('user guessed yes');
 }

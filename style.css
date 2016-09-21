@@ -1,9 +1,20 @@
+h1{
+  text-align: right;
+}
+
 body {
 background-color: #333333;
 color: red;
 
 }
-
+p {
+  border-width: 2px 2px 2px 2px;
+  padding: 30px;
+}
+h4{
+  border-width: medium;
+  background-color: yellow;
+}
 article {
   background-color: white;
   color: black;
