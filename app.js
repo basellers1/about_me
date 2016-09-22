@@ -21,7 +21,8 @@ if (userAnswer === 'UNIVERSITY OF HAWAII' || userAnswer === 'UH'){
   console.log('User guessed UH');
 }
 else if (userAnswer === 'HAWAII PACIFIC UNIVERSITY' || userAnswer === 'HPU') {
-  alert('Yes,that is the right answer.');numCorrect++;
+  alert('Yes,that is the right answer.');
+  numCorrect++;
   console.log('User got it right');
 
 } else {
@@ -31,7 +32,8 @@ else if (userAnswer === 'HAWAII PACIFIC UNIVERSITY' || userAnswer === 'HPU') {
 
 var userAnswer2 = prompt('Memorable jobs for me were at Holland America Line, Hyatt Regency Waikiki. Can you guess my Major? ');
 if (userAnswer2 === 'Travel'){
-  alert('You are right!. I got my B.S.B.A. degree with a Travel Industry Management Major.');numCorrect++;
+  alert('You are right!. I got my B.S.B.A. degree with a Travel Industry Management Major.');
+  numCorrect++;
   console.log('User figured it out');
 
 } else {
@@ -41,7 +43,8 @@ if (userAnswer2 === 'Travel'){
 
 var userAnswer3 = prompt('Do you know which forms of exercise I like?').toLowerCase();
 if (userAnswer3 === 'y' || userAnswer3 === 'yes' || userAnswer3 === 'yoga' ) {
-  alert('Wow, that is a great guess!');numCorrect++;
+  alert('Wow, that is a great guess!');
+  numCorrect++;
   console.log('User answered yes or correct');
 
 } else {
@@ -51,7 +54,8 @@ if (userAnswer3 === 'y' || userAnswer3 === 'yes' || userAnswer3 === 'yoga' ) {
 
 var userAnswer4 = prompt('Do you think I have pet?').toUpperCase();
 if (userAnswer4 === 'N' || userAnswer4 === 'NO') {
-  alert('You are right!');numCorrect++;
+  alert('You are right!');
+  numCorrect++;
   console.log('User guessed No');
 
 } else {
@@ -61,7 +65,8 @@ if (userAnswer4 === 'N' || userAnswer4 === 'NO') {
 
 var userAnswer5 = prompt('Do you think I like coding?').toUpperCase();
 if (userAnswer5 === 'Y' || userAnswer5 === 'YES') {
-  alert('You are right!');numCorrect++;
+  alert('You are right!');
+  numCorrect++;
   console.log('User guessed YES');
 
 } else {
@@ -73,7 +78,8 @@ var correctAnswer = 9;
 for(var numGuess = 0; numGuess < 4; numGuess++){
   var userAnswer6 = parseInt(prompt('How many Pokeman did I catch yesterday?'));
   if(userAnswer6 === correctAnswer){
-    alert('You are right');numCorrect++;
+    alert('You are right');
+    numCorrect++;
     console.log('User guessed right');
     break;
   } else {
@@ -81,24 +87,38 @@ for(var numGuess = 0; numGuess < 4; numGuess++){
     if(userAnswer6 < correctAnswer){
       alert('You guessed low. Try again');
       console.log('User guessed too low');
-    // } else if(userAnswer6 === 'string value'){
-    //   alert('That\'s a funny guess');
-    //   console.log('User didn\'t ;guess')
-    } else {
-      alert('You guessed too high. Try again');
-      console.log('User guessed too low');
+    }
+    if(userAnswer6 > correctAnswer){
+      alert('You guessed too high. Try again.');
+      console.log('User guessed too high');
     }
   }
-  var Pokeman = ['Beedrill','Bulbasaur','Cubone','Dewgong','Krabby','Meowth','Oddish','Jiggypuff','Poliwag','Tentacool'];
-  console.log(Pokeman.length);
-  var userAnswer7 = prompt('Can you guess one of my favorites?');
-  if(userAnswer7 === Pokeman.length){
-    alert('Yes, I like that one');numCorrect++;
-  } else {
-    alert('oops, that\'s not one I have');
-    console.log('User guessed one I don\'t have');
-  }
-
-  console.log('User got ' + numCorrect + ' right');
-  alert('Congrats, you got ' + numCorrect + ' correct!');
 }
+
+var Pokeman = ['Beedrill','Bulbasaur','Cubone','Dewgong','Krabby','Meowth','Oddish','Jiggypuff','Poliwag','Tentacool'];
+console.log(Pokeman.length);
+var numGuesses = 0;
+var guessing = true;
+
+while (guessing && numGuesses < 6){
+  var userAnswer7 = prompt('Can you guess one of my favorite Pokeman?');
+  for (var i = 0; i < Pokeman.length; i++){
+    if(userAnswer7 === Pokeman[i]){
+      alert('Yes, I like that one.');
+      numCorrect++;
+      guessing = false;
+      break;
+    }
+  }
+  if (guessing === true){
+    alert('That Pokeman not on my list.');
+    console.log('user guessed wrong');
+  }
+  numGuesses++;
+  if (numGuesses >= 6){
+    alert('You didn\'t guess any of my favorites');
+    console.log('User didn\'t guess any');
+  }
+}
+console.log('User got ' + numCorrect + ' right');
+alert('Congrats, you got ' + numCorrect + ' correct!');
