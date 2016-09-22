@@ -8,10 +8,19 @@ color: red;
 
 }
 
+ul {
+  list-style-type: square;
+  display: inline;
+  border-radius: #333333;
+  color: white;
+  float: right;
+
+}
 p {
   display: inline;
   border-width: 2px 2px 2px 2px;
   padding: 30px;
+  margin: 10px;
 }
 
 h5{
