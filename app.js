@@ -121,13 +121,14 @@ function correctAnswers(){
   userAnswerSix();
 
   function userAnswerSeven(){
-    var Pokeman = ['Beedrill','Bulbasaur','Cubone','Dewgong','Krabby','Meowth','Oddish','Jiggypuff','Poliwag','Tentacool'];
+    var Pokeman = ['BEEDRILL','BULBASAUR','CUBONE','DEWGONG','KRABBY','MEOWTH','ODDISH','JIGGLYPUFF','POLIWAG','TENTACOOL'];
     console.log(Pokeman.length);
     var numGuesses = 0;
     var guessing = true;
 
     while (guessing && numGuesses < 6){
-      var userAnswer7 = prompt('Can you guess one of my favorite Pokeman?');
+      numGuesses++;
+      var userAnswer7 = prompt('Can you guess one of my favorite Pokeman?').toUpperCase();
       for (var i = 0; i < Pokeman.length; i++){
         if(userAnswer7 === Pokeman[i]){
           alert('Yes, I like that one.');

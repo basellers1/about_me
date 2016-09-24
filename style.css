@@ -3,8 +3,8 @@ h1{
 }
 
 body {
-background-color: #333666;
-color: red;
+border: 2px black solid;
+color: blue;
 margin-top: 20px;
 }
 
@@ -12,9 +12,15 @@ ul {
   list-style-type: square;
   display: inline;
   border-radius: #333333;
-  color: white;
   float: right;
 
+}
+div{
+  padding-right: 30px;
+  margin: 30px;
+}
+aside {
+  margin-bottom: 10px;
 }
 p {
   display: inline;
@@ -23,16 +29,19 @@ p {
   padding: 30px;
   margin: 10px;
 }
-
+p-class {
+  margin-top: 2px;
+}
 h5{
   border-width: medium;
   background-color: yellow;
+text-decoration-line: underline;
 }
 
 article {
   margin-bottom: 20px;
- -moz-border-radius: 50px 95px;
- border-color: #556666;
+ border-radius: 55px 75px;
+ border-color: black;
  padding: 5px;
   background-color: white;
   color: black;
