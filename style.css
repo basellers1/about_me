@@ -1,48 +1,93 @@
-h1{
+html {
+  margin: 20px, 10px, 20px, 10px;
+  padding: 20px;
+  border: 2px black solid;
+  }
+
+h1 {
   text-align: right;
-}
+
+  }
+
 
 body {
-border: 2px black solid;
-color: blue;
-margin-top: 20px;
-}
+  Margin: 5px, 5px, 5px, 500px;
+  background-image: url("blue angels.jpg");
+  background-repeat: no-repeat;
+  background-position: top right;
+  color: blue;
+  }
 
 ul {
   list-style-type: square;
   display: inline;
   border-radius: #333333;
   float: right;
+  color: black;
+  }
 
-}
-div{
+div {
   padding-right: 30px;
   margin: 30px;
+  }
+
+hpu {
+  margin-left: 50px;
+  margin-top: 20px;
 }
+
 aside {
-  margin-bottom: 10px;
-}
+  margin-bottom: 50px;
+  margin-left: 200px;
+  }
+
 p {
   display: inline;
   border-radius: 2px;
   border-width: 2px 2px 2px 2px;
   padding: 30px;
   margin: 10px;
-}
+    }
+
 p-class {
   margin-top: 2px;
-}
-h5{
+  }
+
+h5-class {
+  text color: red;
   border-width: medium;
   background-color: yellow;
-text-decoration-line: underline;
-}
+  }
 
-article {
-  margin-bottom: 20px;
- border-radius: 55px 75px;
- border-color: black;
- padding: 5px;
-  background-color: white;
+section {
+  margin-top: 10px, 20px, 10px, 40px;
   color: black;
 }
+c2 {
+  border-color: yellow:
+  color: red
+  }
+
+c3 {
+  background-image: url("yoga.jpg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  margin-bottom: 50px;
+  margin-top: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: 100px;
+  float: right;
+  border-radius: 10px;
+  border-color: green;
+  border-style: outset;
+  margin: 30px;
+    }
+
+article {
+  border-radius: 5px 5px;
+  border-color: black;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  }
