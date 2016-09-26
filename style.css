@@ -1,6 +1,6 @@
 html {
   margin: 20px, 10px, 20px, 10px;
-  padding: 20px;
+  padding: 10px;
   border: 2px black solid;
   }
 
@@ -8,7 +8,6 @@ h1 {
   text-align: right;
 
   }
-
 
 body {
   Margin: 5px, 5px, 5px, 500px;
@@ -63,7 +62,7 @@ section {
   margin-top: 10px, 20px, 10px, 40px;
   color: black;
 }
-c2 {
+c1 {
   border-color: yellow:
   color: red
   }
