@@ -145,6 +145,7 @@ function correctAnswers(){
       if (numGuesses >= 6){
         alert('You didn\'t guess any of my favorites');
         console.log('User didn\'t guess any');
+        break;
       }
     }
     console.log('User got ' + numCorrect + ' right');
