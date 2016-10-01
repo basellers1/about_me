@@ -3,12 +3,10 @@ html {
   padding: 10px;
   border: 2px black solid;
   }
-
 h1 {
   text-align: right;
-
+color: white;
   }
-
 body {
   Margin: 5px, 5px, 5px, 500px;
   background-image: url("blue angels.jpg");
@@ -16,7 +14,6 @@ body {
   background-position: top right;
   color: blue;
   }
-
 ul {
   list-style-type: square;
   display: inline;
@@ -24,22 +21,18 @@ ul {
   float: right;
   color: black;
   }
-
 div {
   padding-right: 30px;
   margin: 30px;
   }
-
 hpu {
   margin-left: 50px;
   margin-top: 20px;
 }
-
 aside {
   margin-bottom: 50px;
   margin-left: 200px;
   }
-
 p {
   display: inline;
   border-radius: 2px;
@@ -47,11 +40,9 @@ p {
   padding: 30px;
   margin: 10px;
     }
-
 p-class {
   margin-top: 2px;
   }
-
 section {
   margin: 40px, 20px,20px, 40px;
   padding: 20px;
@@ -61,16 +52,13 @@ section {
   border-color: yellow:
   color: red
   }
-
 figure {
   margin-top: 30px;
 }
-
 figcaption {
   padding-left: 20px;
   color: black;
 }
-
 .c2 {
   text-indent: 300px;
   border-radius: 10px;
@@ -78,7 +66,6 @@ figcaption {
   border-style: outset;
   margin: 30px;
     }
-
 .c3 {
   text-indent: 370px;
   border-radius: 10px;
@@ -87,7 +74,6 @@ figcaption {
   margin: 30px;
   color: black;
     }
-
 article {
   border-radius: 5px 5px;
   border-color: black;
